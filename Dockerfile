@@ -63,3 +63,10 @@ ENV PORT=8080
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
 ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
+
+# GitHub Repository Clone - ecrire06 personal blog
+RUN git clone https://github.com/ecrire06/ecrire06.git
+RUN cd ecrire06
+RUN git config user.name "ecrire06"
+RUN git config user.email "juneha2002@gmail.com"
+
