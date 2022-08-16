@@ -67,8 +67,7 @@ ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
 # GitHub Repository Clone - ecrire06 personal blog
 # ADD https://api.github.com/repos/$USER/$REPO/git/refs/heads/$BRANCH version.json
 # RUN git clone -b $BRANCH https://github.com/$USER/$REPO.git $GIT_HOME/
-ADD https://api.github.com/repos/ecrire06/ecrire06/git/refs/heads/main version.json
-RUN git clone -b main https://github.com/ecrire06/ecrire06.git
+
 # RUN git clone https://github.com/ecrire06/ecrire06.git
 # RUN cd ecrire06
 # RUN git config user.name "ecrire06"
