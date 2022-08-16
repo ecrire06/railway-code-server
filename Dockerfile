@@ -29,16 +29,16 @@ RUN code-server --install-extension esbenp.prettier-vscode
 # RUN code-server --install-extension 
 
 # Install apt packages:
-RUN sudo apt-get install -y ubuntu-make
+# RUN sudo apt-get install -y ubuntu-make
 
 # Copy files: 
-COPY deploy-container/myTool /home/coder/myTool
+# COPY deploy-container/myTool /home/coder/myTool
 
 # -----------
 
 # You can add custom software and dependencies for your environment here. Some examples:
 
-RUN sudo apt-get install -y build-essential
+# RUN sudo apt-get install -y build-essential
 # RUN COPY myTool /home/coder/myTool
 
 # Install NodeJS
