@@ -25,8 +25,19 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
+# To check the name of extension, VSCode -> Extension -> More Info -> Identifier
+# Check: [Command line extension management](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management)
 RUN code-server --install-extension esbenp.prettier-vscode
-# RUN code-server --install-extension 
+RUN code-server --install-extension equinusocio.vsc-material-theme
+RUN code-server --install-extension pkief.material-icon-theme
+RUN code-server --install-extension formulahendry.auto-rename-tag
+RUN code-server --install-extension solnurkarim.html-to-css-autocompletion
+RUN code-server --install-extension ecmel.vscode-html-css
+RUN code-server --install-extension pranaygp.vscode-css-peek
+RUN code-server --install-extension mrmlnc.vscode-autoprefixer
+RUN code-server --install-extension CoenraadS.bracket-pair-colorizer-2
+RUN code-server --install-extension oderwat.indent-rainbow
+RUN code-server --install-extension ritwickdey.LiveServer
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
