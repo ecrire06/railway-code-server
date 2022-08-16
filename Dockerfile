@@ -67,6 +67,6 @@ ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
 # GitHub Repository Clone - ecrire06 personal blog
 RUN git clone https://github.com/ecrire06/ecrire06.git
 RUN cd ecrire06
-RUN git config user.name "ecrire06"
-RUN git config user.email "juneha2002@gmail.com"
+# RUN git config user.name "ecrire06"
+# RUN git config user.email "juneha2002@gmail.com"
 
