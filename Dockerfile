@@ -31,7 +31,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN code-server --install-extension pkief.material-icon-theme
-RUN code-server --install-extension formulahendry.auto-rename-tag
+# RUN code-server --install-extension formulahendry.auto-rename-tag
 RUN code-server --install-extension solnurkarim.html-to-css-autocompletion
 RUN code-server --install-extension ecmel.vscode-html-css
 RUN code-server --install-extension pranaygp.vscode-css-peek
