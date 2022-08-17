@@ -39,6 +39,7 @@ RUN code-server --install-extension mrmlnc.vscode-autoprefixer
 RUN code-server --install-extension CoenraadS.bracket-pair-colorizer-2
 RUN code-server --install-extension oderwat.indent-rainbow
 RUN code-server --install-extension ritwickdey.LiveServer
+RUN code-server --install-extension 	philnash.ngrok-for-vscode	
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
