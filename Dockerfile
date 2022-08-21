@@ -31,15 +31,18 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN code-server --install-extension pkief.material-icon-theme
+RUN code-server --install-extension CoenraadS.bracket-pair-colorizer-2
+RUN code-server --install-extension oderwat.indent-rainbow
+RUN code-server --install-extension ritwickdey.LiveServer
+RUN code-server --install-extension wakatime.vscode-wakatime
+RUN code-server --install-extension KevinRose.vsc-python-indent
+
+# extensions for HTML CSS JS - frontend
+# RUN code-server --install-extension philnash.ngrok-for-vscode
 # RUN code-server --install-extension solnurkarim.html-to-css-autocompletion
 # RUN code-server --install-extension ecmel.vscode-html-css
 # RUN code-server --install-extension pranaygp.vscode-css-peek
 # RUN code-server --install-extension mrmlnc.vscode-autoprefixer
-RUN code-server --install-extension CoenraadS.bracket-pair-colorizer-2
-RUN code-server --install-extension oderwat.indent-rainbow
-RUN code-server --install-extension ritwickdey.LiveServer
-# RUN code-server --install-extension philnash.ngrok-for-vscode	
-RUN code-server --install-extension wakatime.vscode-wakatime
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
