@@ -33,12 +33,12 @@ RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN code-server --install-extension pkief.material-icon-theme
 RUN code-server --install-extension CoenraadS.bracket-pair-colorizer-2
 RUN code-server --install-extension oderwat.indent-rainbow
-RUN code-server --install-extension ritwickdey.LiveServer
 RUN code-server --install-extension wakatime.vscode-wakatime
 RUN code-server --install-extension KevinRose.vsc-python-indent
 RUN code-server --install-extension ms-python.python
 
 # extensions for HTML CSS JS - frontend
+# RUN code-server --install-extension ritwickdey.LiveServer
 # RUN code-server --install-extension philnash.ngrok-for-vscode
 # RUN code-server --install-extension solnurkarim.html-to-css-autocompletion
 # RUN code-server --install-extension ecmel.vscode-html-css
