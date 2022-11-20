@@ -28,12 +28,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
 # To check the name of extension, VSCode -> Extension -> More Info -> Identifier
 # Check: [Command line extension management](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management)
-# RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN code-server --install-extension pkief.material-icon-theme
 RUN code-server --install-extension CoenraadS.bracket-pair-colorizer-2
 RUN code-server --install-extension oderwat.indent-rainbow
 RUN code-server --install-extension wakatime.vscode-wakatime
-# RUN code-server --install-extension KevinRose.vsc-python-indent
 RUN code-server --install-extension ms-python.python
 
 # extensions for HTML CSS JS - frontend
