@@ -1,6 +1,6 @@
 # Start from the code-server Debian base image
 # To Update your code-server version, modify the version number on line 2 in your Dockerfile. See the [list of tags](https://hub.docker.com/r/codercom/code-server/tags?page=1&ordering=last_updated) for the latest version.
-FROM codercom/code-server:4.7.1
+FROM codercom/code-server:4.8.3
 
 USER coder
 
@@ -34,20 +34,6 @@ RUN code-server --install-extension oderwat.indent-rainbow
 RUN code-server --install-extension wakatime.vscode-wakatime
 RUN code-server --install-extension ms-python.python
 
-# extensions for HTML CSS JS - frontend
-# RUN code-server --install-extension ritwickdey.LiveServer
-# RUN code-server --install-extension philnash.ngrok-for-vscode
-# RUN code-server --install-extension solnurkarim.html-to-css-autocompletion
-# RUN code-server --install-extension ecmel.vscode-html-css
-# RUN code-server --install-extension pranaygp.vscode-css-peek
-# RUN code-server --install-extension mrmlnc.vscode-autoprefixer
-
-# Install apt packages:
-# RUN sudo apt-get install -y ubuntu-make
-
-# Copy files: 
-# COPY deploy-container/myTool /home/coder/myTool
-
 # -----------
 
 # You can add custom software and dependencies for your environment here. Some examples:
@@ -70,8 +56,4 @@ ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
 # ADD https://api.github.com/repos/$USER/$REPO/git/refs/heads/$BRANCH version.json
 # RUN git clone -b $BRANCH https://github.com/$USER/$REPO.git $GIT_HOME/
 
-# RUN git clone https://github.com/ecrire06/ecrire06.git
-# RUN cd ecrire06
-# RUN git config user.name "ecrire06"
-# RUN git config user.email "juneha2002@gmail.com"
 
