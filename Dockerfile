@@ -1,6 +1,6 @@
 # Start from the code-server Debian base image
 # To Update your code-server version, modify the version number on line 2 in your Dockerfile. See the [list of tags](https://hub.docker.com/r/codercom/code-server/tags?page=1&ordering=last_updated) for the latest version.
-FROM codercom/code-server:4.8.3
+FROM codercom/code-server:4.9.0
 
 USER coder
 
